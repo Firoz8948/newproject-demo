@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import GlobalHeader from '@/components/GlobalHeader.vue'
+import GlobalHeader from '@/components/common/GlobalHeader.vue'
 
 export default {
   name: 'DefaultLayout',
