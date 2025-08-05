@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Us - Samhita Bazaar{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <!-- Contact Hero Section -->
+    <div class="row">
+        <div class="col-12 text-center mb-5">
+            <h1 class="display-4 fw-bold">Contact Us</h1>
+            <p class="lead">We're here to help you succeed. Get in touch with our team.</p>
+        </div>
+    </div>
+    
+    <!-- Contact Form and Info -->
+    <div class="row">
+        <div class="col-md-8 mb-5">
+            <div class="card shadow">
+                <div class="card-body p-5">
+                    <h3 class="fw-bold mb-4">Send us a message</h3>
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstName" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="businessType" class="form-label">Business Type</label>
+                            <select class="form-select" id="businessType">
+                                <option value="">Select your business type</option>
+                                <option value="retail">Retail</option>
+                                <option value="wholesale">Wholesale</option>
+                                <option value="manufacturing">Manufacturing</option>
+                                <option value="services">Services</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card shadow h-100">
+                <div class="card-body p-4">
+                    <h4 class="fw-bold mb-4">Get in Touch</h4>
+                    
+                    <div class="mb-4">
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fas fa-phone text-primary me-3"></i>
+                            <strong>Phone</strong>
+                        </div>
+                        <p class="ms-4 mb-0">+91 98765 43210</p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fas fa-envelope text-primary me-3"></i>
+                            <strong>Email</strong>
+                        </div>
+                        <p class="ms-4 mb-0">support@samhitabazaar.com</p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                            <strong>Address</strong>
+                        </div>
+                        <p class="ms-4 mb-0">123 Business District<br>New Delhi, India 110001</p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fas fa-clock text-primary me-3"></i>
+                            <strong>Business Hours</strong>
+                        </div>
+                        <p class="ms-4 mb-0">
+                            Mon - Fri: 9:00 AM - 6:00 PM<br>
+                            Sat: 10:00 AM - 4:00 PM
+                        </p>
+                    </div>
+                    
+                    <hr>
+                    
+                    <h5 class="fw-bold mb-3">Follow Us</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-primary"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="text-primary"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="#" class="text-primary"><i class="fab fa-linkedin fa-2x"></i></a>
+                        <a href="#" class="text-primary"><i class="fab fa-instagram fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
